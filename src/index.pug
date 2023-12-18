@@ -1,0 +1,276 @@
+extends layouts/default
+
+block content
+    .header#back
+        .header__star
+            svg.header__star-icon: use(xlink:href="../f/i/icons.svg#star")
+        .header__title Резюме
+        .header__menu 
+            img.header__menu-sandvich(src="f/i/sandvich.svg")
+            a.header__menu-item(href="#skills") Навыки 
+            a.header__menu-item(href="#works") Примеры работ
+            a.header__menu-item(href="#char") О Себе
+            a.header__menu-item(href="#steps") Порядок работы
+            a.header__menu-item(href="#docs") Документы
+            a.header__menu-item(href="#contacts") Контакты
+        .mobile-menu
+            a.mobile-menu__item(href="#skills") Навыки
+            a.mobile-menu__item(href="#works") Примеры работ
+            a.header__menu-item(href="#char") О Себе
+            a.mobile-menu__item(href="#steps") Порядок работы
+            a.mobile-menu__item(href="#docs") Документы
+            a.mobile-menu__item(href="#contacts") Контакты
+            a.mobile-menu__close(href="#")
+                img.mobile-menu__close-cross(src="f/i/cross.svg")
+        .header__email
+            svg.header__email-icon: use(xlink:href="../f/i/icons.svg#email")
+        .menu-email
+            .menu-email__info
+                h3 Обратная связь
+                a.telegramchat(href="tg://resolve?domain=<Ilya Mitin>" target="_blank")
+                    img.telegramchat__icon(src="f/i/telegram.svg")
+                    p Ilya Mitin
+                a.whatsappchat(href="https://api.whatsapp.com/send?phone=79190621142" target="_blank") 
+                    img.whatsappchat__icon(src="f/i/whatsapp.svg")
+                    p +7-919-062-11-42
+                a.mailchat(href="mailto:ilmitin@mail.ru" target="_blank") 
+                    img.mailchat__icon(src="f/i/mail.svg")
+                    p ilmitin@mail.ru
+                a.menu-email__info-close(href="#")
+                    img.menu-email__info-close-cross(src="f/i/cross.svg")
+    .section.orange
+        .section__sidebar
+            //.sss
+                a.section__sidebar-item(href="#")
+                    svg.section__sidebar-item-icon: use(xlink:href="../f/i/icons.svg#pinterest")
+                a.section__sidebar-item(href="#")
+                    svg.section__sidebar-item-icon: use(xlink:href="../f/i/icons.svg#twiter")
+                a.section__sidebar-item(href="#")
+                    svg.section__sidebar-item-icon: use(xlink:href="../f/i/icons.svg#fb")
+                a.section__sidebar-item(href="#")
+                    svg.section__sidebar-item-icon: use(xlink:href="../f/i/icons.svg#insta")
+        .section__content
+            .section__texts 
+                svg.section__texts-picture.top: use(xlink:href="../f/i/icons.svg#triangle")
+                .section__texts-title Митин Илья Александрович
+                .section__texts-selected Junior frontend developer
+                .section__texts-subtext Здраствуйте! Спасибо, что читаете моё резюме! Надеюсь, что после ознакомления - я смогу стать кандидатом в вашу кампанию!
+                .btn__bg: a.btn(href="#skills") Вперёд!
+                //svg.section__texts-picture.bottom: use(xlink:href="../f/i/icons.svg#bigstar")
+            .section__photos
+                .section__photos-photo.first(style="background-image: url('f/i/photo1.jpg');")
+                .section__photos-photo.two(style="background-image: url('f/i/photo2.jpg');")
+                .section__photos-photo.three(style="background-image: url('f/i/photo3.jpg');")
+        .section__sidebar
+    .section.n2#skills
+        .section__sidebar
+            .section__sidebar-text What We Can Do For You
+        .section__content
+            .skills
+                .skills__item
+                    .skills__item-text
+                        h2 Мои навыки
+                        p Ниже указаны навыки, которые у меня имеются.
+                .skills__item 
+                    .skills__item-text
+                        .skills__item-text-icon
+                            img.skills__item-text-icon-logo(src="f/i/html.svg")
+                        h4 HTML, PUG
+                        p Long established fact that a reader will be distracted by the readable design content layout.
+                        //a.link(href="#") read more
+                .skills__item 
+                    .skills__item-text
+                        .skills__item-text-icon
+                            img.skills__item-text-icon-logo(src="f/i/css.svg")
+                        h4 CSS, STYLUS, SCSS
+                        p Long established fact that a reader will be distracted by the readable design content layout.
+                        //a.link(href="#") read more
+                .skills__item
+                    .skills__item-text
+                        .skills__item-text-icon
+                            img.skills__item-text-icon-logo(src="f/i/jquery.svg")
+                        h4 JQUERY
+                        p Long established fact that a reader will be distracted by the readable design content layout.
+                .skills__item
+                    .skills__item-text
+                        //.skills__item-text-icon
+                            img.skills__item-text-icon-logo(src="f/i/jquery.svg")
+                        h4 JQUERY
+                        p Long established fact that a reader will be distracted by the readable design content layout.
+                        //a.link(href="#") read more
+                //a.btn(href="#").skills more services
+        .section__sidebar
+    .banner#works
+        .banner__texts
+            svg.banner__texts-icon: use(xlink:href="../f/i/icons.svg#4star")        
+            .banner__texts-text Примеры работ
+            svg.banner__texts-icon: use(xlink:href="../f/i/icons.svg#heart")
+    .section.n3
+        .section__sidebar 
+            .section__sidebar-text Some of our finest work
+        .section.n3__content
+            .projects
+                .projects__item
+                    .projects__item-text
+                        h3 Agency
+                        p Сайт технологий и дизайна
+                        hr
+                        p Данным сайтом, я вдохновился создать своё резюме, с таким форматом.
+                        a.link(href="https://github.com/ShedyDark/agency" target="_blank") Github
+                    a.projects__item-photo(href="/projects/agency/" target="_blank" style="background-image: url('f/i/agency.jpg');")
+                .projects__item
+                    .projects__item-text
+                        h3 SoSgaming
+                        p Сайт игры Королевской Битвы
+                        hr
+                        a.link(href="https://github.com/ShedyDark/sosgaming" target="_blank") Github
+                    a.projects__item-photo(href="/projects/sosgaming/" target="_blank" style="background-image: url('f/i/sosgaming.jpg');")
+                .projects__item
+                    .projects__item-text
+                        h3 Foodies
+                        p Сайт-магазин полезной пищи
+                        hr
+                        a.link(href="https://github.com/ShedyDark/foodies" target="_blank") Github
+                    a.projects__item-photo(href="/projects/foodies/" target="_blank" style="background-image: url('f/i/foodies.jpg');")
+                //.projects__item
+                    .projects__item-text
+                        h3 Texas Protfolio
+                        p Branding, UIUX Design
+                        hr
+                    a.projects__item-photo(href="#" style="background-image: url('f/i/project04.jpg');")
+            //.btn__bg: a.btn(href="#") get started
+        .section__sidebar
+    //.special
+        .special__text
+            svg.special__text-icon: use(xlink:href="../f/i/icons.svg#disc") 
+            h2 What makes us special?
+            p Lorem Ipsum is simply dummy text of the printingand typesetting industry.
+        .special__statics
+            .special__statics-item
+                h1 50+
+                p Years of operation
+            .special__statics-item
+                h1 360
+                p Project Delivery
+            .special__statics-item
+                .yellowbg
+                    h1 600
+                    p Specialist
+            .special__statics-item
+                h1 75+
+                p Awards Of Exellency
+    .section.n4#char
+        .section__sidebar 
+            .section__sidebar-text О Себе
+        .section__content
+            .char
+                .char__text
+                    h2 Мои качества
+                    .char__text-points
+                        p - Легко обучаюсь чему-то новому -
+                        p - Ответственно отношусь к работе -
+                        p - Хорошая концетрация -
+                        p - Терпелив и настойчив -
+                        p - Умею принимать критику -
+                .char__text
+                    h2 Мои предпочтения
+                    .char__text-points
+                        p - Меланхолик -
+                        p - Люблю тишину -
+                        p - Увлекаюсь видеоиграми -
+                        p - Смотрю сериалы -
+                        p - Чай: Напиток богов -
+        .section__sidebar
+    .banner.n2
+        img.banner.n2__icon(src="f/i/pc1.svg")
+        img.banner.n2__icon(src="f/i/pc2.svg")
+        img.banner.n2__icon(src="f/i/pc3.svg")
+        img.banner.n2__icon(src="f/i/pc4.svg")
+        img.banner.n2__icon(src="f/i/pc5.svg")
+        img.banner.n2__icon(src="f/i/pc6.svg")
+    .section.n5#steps
+        .section__sidebar 
+            .section__sidebar-text About US
+        .section__content
+            .progress
+                .progress__image(style="background-image: url('f/i/bg-aboutus.jpg');")
+                .progress__text
+                    .sticky
+                        h2 Мой порядок работы
+                        p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                        p of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop
+                        .btn__bg: a.btn(href="#") About Agency
+        .section__sidebar
+    .section.n6#docs
+        .section__sidebar 
+            .section__sidebar-text Документы
+        .section__content
+            .history
+                .history__text
+                    .history__text-info 
+                        .history__text-info-years 2022-2023 
+                        h3 Трудовая книжка
+                        p ОАО "Телеконтакт". Опыт работы: 1 год и 6 месяцев
+                    .history__text-info 
+                        .history__text-info-years 2018
+                        h3 Диплом о профессиональной переподготовке
+                        p Учебный центр службы занятости
+                    .history__text-info 
+                        .history__text-info-years 2018
+                        h3 Военный билет
+                        p Ракетные войска в Козельске
+                    .history__text-info 
+                        .history__text-info-years 2018
+                        h3 Диплом о среднем профессиональном образовании
+                        p Тверской химико-технологический колледж. Специальность: Специалист банковского дела
+                    .history__text-info
+                        .history__text-info-years 2015
+                        h3 Аттестат об основном общем образовании
+                        p Школа Гимназия №12. 9 классов
+                //.history__video
+                    .history__video-slide(style="background-image: url('f/i/video.jpg');")
+        .section__sidebar
+    .banner.n3
+        img.banner.n3__icon(src="f/i/sonne.svg")
+        .banner.n3__text
+            p Заинтересовало моё резюме?
+            h2 Давайте поработаем вместе!
+            a.arrow-down(href='#contacts')
+                img.arrow-down__icon(src="f/i/arrow.svg")
+    .section.n8#contacts
+        .section__sidebar
+        .footer
+            .footer__main
+                .footer__main-text
+                    .footer__main-text-title
+                        img.footer__main-text-title-icon(src="f/i/small-star.svg")
+                        h2 Обратная связь
+                    p Если я вас заинтересовал, то здесь будет указана: Моя почта и телефон.
+                    p (Просьба, перед звонком, отправить сообщение через WhatsApp или СМС, о вакансии, т.к. большинство неизветных номеров уходят в "спам")
+                    h4 ilmitin@mail.ru
+                    h4 +7-919-062-11-42
+                    a.telegramchat(href="tg://resolve?domain=<Ilya Mitin>" target="_blank")
+                        img.telegramchat__icon(src="f/i/telegram.svg")
+                    a.whatsappchat(href="https://api.whatsapp.com/send?phone=79190621142" target="_blank")
+                        img.whatsappchat__icon(src="f/i/whatsapp.svg")
+                .footer__main-message
+                    //h3 Newsletter
+                    .footer__main-message-info
+                        img.footer__main-message-info-rocket(src="f/i/rocket.svg")
+                        .mail ilmitin@mail.ru
+                        .btn__bg: a.btn(href="mailto:ilmitin@mail.ru") Написать
+            //.footer__menu
+                .footer__menu-part1
+                    a.footer__menu-item(href="#") home
+                    a.footer__menu-item(href="#") work
+                    a.footer__menu-item(href="#") contact
+                .footer__menu-part2
+                    a.footer__menu-item(href="#") licenses
+                    a.footer__menu-item(href="#") style Guide
+                    a.footer__menu-item(href="#") changelog
+        .section__sidebar
+    .end
+        .end__sidebar
+        .end__copyright Copyright © workment | Designed by VictorFlow Templates - Powered by Webflow
+        a.end__sidebar(href='#back')
+            img.end__sidebar-arrow(src="f/i/arrow.svg")

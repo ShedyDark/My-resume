@@ -1,0 +1,20 @@
+doctype html
+html
+	block head
+		include head
+	block style
+	if workUrl
+		link(href=workUrl, rel="stylesheet", type="text/css")
+	block vars
+	body(class=bodyClass)
+		
+		block header 
+			include header
+			
+		block content
+
+		block footer
+			include footer
+
+		block foot
+			include foot
